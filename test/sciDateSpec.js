@@ -60,25 +60,25 @@ describe('SciDate', function() {
     it('should increase date by one day', function() {
       var date = new SciDate(01, 11, 1936);
       date.addDay();
-      assert.isTrue(date.day.day === 2);
-      assert.isTrue(date.month.month === 11);
-      assert.isTrue(date.year.year === 1936);
+      assert.isTrue(date.dayPart.day === 2);
+      assert.isTrue(date.monthPart.month === 11);
+      assert.isTrue(date.yearPart.year === 1936);
     });
 
     it('should increase date by one day', function() {
       var date = new SciDate(31, 01, 1936);
       date.addDay();
-      assert.isTrue(date.day.day === 1);
-      assert.isTrue(date.month.month === 2);
-      assert.isTrue(date.year.year === 1936);
+      assert.isTrue(date.dayPart.day === 1);
+      assert.isTrue(date.monthPart.month === 2);
+      assert.isTrue(date.yearPart.year === 1936);
     });
 
     it('should increase date by one day', function() {
       var date = new SciDate(31, 12, 1936);
       date.addDay();
-      assert.isTrue(date.day.day === 1);
-      assert.isTrue(date.month.month === 1);
-      assert.isTrue(date.year.year === 1937);
+      assert.isTrue(date.dayPart.day === 1);
+      assert.isTrue(date.monthPart.month === 1);
+      assert.isTrue(date.yearPart.year === 1937);
     });
 
 
