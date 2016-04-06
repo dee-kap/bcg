@@ -6,18 +6,17 @@ var SciDate = require('../lib/sciDate.js');
 // check that date is valid
 
 describe('SciDate', function() {
-
   it('should create an object when valid values are passed', function() {
     var date = new SciDate(12, 3, 1987);
     assert.isTrue(_.isObject(date));
   });
 
   it('should throw an error when invalid values are passed into constructor', function() {
-    expect(function(){
+    expect(function() {
       new SciDate('xx/01/1999');
     }).to.throw('Invalid Date');
 
-  })
+  });
 
   describe('isGreaterThan', function() {
     it('should return true when date passed in is greater', function() {
@@ -32,7 +31,7 @@ describe('SciDate', function() {
       assert.isFalse(date1.isGreaterThan(date2));
     });
 
-  })
+  });
 
   describe('isEqualTo', function() {
     it('should return false when two dates are different', function() {
@@ -54,7 +53,7 @@ describe('SciDate', function() {
       assert.isTrue(date1.isEqualTo(date2));
     });
 
-  })
+  });
 
   describe('addDay', function() {
     it('should increase date by one day', function() {
@@ -81,7 +80,6 @@ describe('SciDate', function() {
       assert.isTrue(date.yearPart.year === 1937);
     });
 
-
-  })
+  });
 
 });

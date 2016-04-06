@@ -4,6 +4,7 @@
   "description": "bcg",
   "main": "index.js",
   "scripts": {
+    "calculate": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Deepak Kapoor <kapoordeepak@gmail.com> (http://kapoor.io)",
