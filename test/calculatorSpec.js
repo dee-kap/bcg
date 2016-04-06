@@ -36,10 +36,14 @@ describe('Calculator', function() {
       assert.equal(days, 0);
     });
 
-
     it('should return 1', function() {
       var days = Calculator.calculateDays('01/01/2000', '03/01/2000');
       assert.equal(days, 1);
+    });
+
+    it('should return 1', function() {
+      var days = Calculator.calculateDays('29/12/2999', '30/12/2999');
+      assert.equal(days, 0);
     });
 
   });

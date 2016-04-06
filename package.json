@@ -1,14 +1,13 @@
 {
   "name": "bcg",
   "version": "1.0.0",
-  "description": "bcg",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "calculate": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Deepak Kapoor <kapoordeepak@gmail.com> (http://kapoor.io)",
-  "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
     "lodash": "^4.7.0",
