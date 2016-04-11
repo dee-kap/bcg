@@ -18,6 +18,14 @@ describe('SciDate', function() {
 
   });
 
+
+  it('should throw an error when invalid values are passed into constructor', function() {
+    expect(function() {
+      new SciDate('30/02/1999');
+    }).to.throw('Invalid Date');
+
+  });
+
   describe('isGreaterThan', function() {
     it('should return true when date passed in is greater', function() {
       var date1 = new SciDate(01, 11, 1965);
